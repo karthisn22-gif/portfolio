@@ -3,14 +3,66 @@ export default function Projects() {
     <>
 <section className="proj" id="projects"><div className="wrap"><p className="mono">03 — Selected work</p>
 <article className="case" id="wft">
-<div className="chead"><h3>Water Footprint<br />Tracker</h3><span className="badge">3rd place · BIT Hackathon 2025</span></div>
+<div className="chead">
+  <h3>Water Footprint<br />Tracker</h3>
+  <div style={{ display: 'flex', gap: '0.8rem', alignItems: 'center', flexWrap: 'wrap' }}>
+    <a 
+      className="btn" 
+      href="https://waterfootprintapp.onrender.com/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      style={{
+        background: '#FFC94D',
+        color: '#14121A',
+        borderColor: '#FFC94D',
+        fontWeight: 700,
+        padding: '0.55rem 1.2rem',
+        fontSize: '0.82rem',
+        textTransform: 'uppercase',
+        letterSpacing: '0.08em',
+        fontFamily: 'var(--mono)',
+        borderRadius: '99px',
+        textDecoration: 'none',
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: '0.4rem'
+      }}
+    >
+      Live Demo ↗
+    </a>
+    <span className="badge">3rd place · BIT Hackathon 2025</span>
+  </div>
+</div>
 <div className="cgrid"><div>
 <div className="tabs" role="tablist" aria-label="Water Footprint Tracker case study">
 <button className="tab" role="tab" aria-selected="true" aria-controls="w1">Problem</button><button className="tab" role="tab" aria-selected="false" aria-controls="w2">Solution</button><button className="tab" role="tab" aria-selected="false" aria-controls="w3">Features</button></div>
 <div className="panel" id="w1" role="tabpanel"><p>The water behind everyday food is invisible to consumers. The app shows the total in litres/kg. Knowing what a product costs in agricultural water, and whether a crop suits the local region, normally takes research.</p></div>
 <div className="panel" id="w2" role="tabpanel" hidden><p>An AI-powered web app that identifies a food product from an uploaded image, a camera scan or typed text, then estimates its agricultural water footprint, split into Blue, Green and Grey components.</p></div>
 <div className="panel" id="w3" role="tabpanel" hidden><ul><li>Image upload</li><li>Camera scanning</li><li>Manual food input</li><li>Litres per kg result</li><li>Blue / Green / Grey split</li><li>Crop suitability by location</li><li>Irrigation method info</li><li>Interactive visualizations</li><li>Rated Excellent / Moderate / Poor</li></ul></div>
-<div className="pc"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>AI</span><span>REST APIs</span><span>Team size: 1</span></div></div>
+<div className="pc"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>AI</span><span>REST APIs</span><span>Team size: 1</span></div>
+<div style={{ marginTop: '1.6rem' }}>
+  <a 
+    className="btn p" 
+    href="https://waterfootprintapp.onrender.com/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    style={{
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: '0.6rem',
+      background: '#FFC94D',
+      color: '#14121A',
+      borderColor: '#FFC94D',
+      fontWeight: 700,
+      padding: '0.75rem 1.6rem',
+      borderRadius: '99px',
+      textDecoration: 'none'
+    }}
+  >
+    Visit Live Project ↗
+  </a>
+</div>
+</div>
 <aside className="viz" aria-label="Interactive pipeline">
 <p className="mono">How it flows — tap a stage</p>
 <div className="flow" id="flow"><button className="step on" style={{"textAlign": "left", "background": "none", "color": "inherit", "font": "inherit", "cursor": "pointer"}}><i>01</i>Input: photo, camera or text</button><button className="step" style={{"textAlign": "left", "background": "none", "color": "inherit", "font": "inherit", "cursor": "pointer"}}><i>02</i>AI identifies the food product</button><button className="step" style={{"textAlign": "left", "background": "none", "color": "inherit", "font": "inherit", "cursor": "pointer"}}><i>03</i>Express API + MongoDB lookup</button><button className="step" style={{"textAlign": "left", "background": "none", "color": "inherit", "font": "inherit", "cursor": "pointer"}}><i>04</i>Footprint shown in litres/kg</button></div>
